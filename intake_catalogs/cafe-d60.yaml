@@ -1,0 +1,33 @@
+plugins:
+  source:
+    - module: intake_xarray
+
+sources:
+
+  atmos_isobaric_daily:
+    description: CSIRO DCFP CAFE D60 Atmos Isobaric Daily
+    driver: zarr
+    args:
+      urlpath: "s3://oa-dcfp/cafe-d60/atmos_isobaric_daily.zarr"
+      storage_options:
+        anon: False
+      consolidated: True
+      
+  ocean_bgc_daily:
+    description: CSIRO DCFP CAFE D60 Ocean BGC Daily
+    driver: zarr
+    args:
+      urlpath: "s3://csiro-dcfp-cafe-d60/ocean_bgc_daily"
+      storage_options:
+        anon: False
+      consolidated: True
+      
+  ocean_bgc_month:
+    description: CSIRO DCFP CAFE D60 Ocean BGC Monthy
+    driver: zarr
+    args:
+      urlpath: "s3://csiro-dcfp-cafe-d60/ocean_bgc_month"
+      storage_options:
+        anon: False
+      consolidated: True
+

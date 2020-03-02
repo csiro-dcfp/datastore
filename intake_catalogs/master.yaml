@@ -1,0 +1,20 @@
+description: 'CSIRO DCFP'
+sources:
+
+  cafe_d60:
+    args:
+      path: "{{ CATALOG_DIR }}/cafe-d60.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  cafe_d88:
+    args:
+      path: "{{ CATALOG_DIR }}/cafe-d88.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
+
+  cafe_f4:
+    args:
+      path: "{{ CATALOG_DIR }}/cafe-f4.yaml"
+    description: ""
+    driver: intake.catalog.local.YAMLFileCatalog
